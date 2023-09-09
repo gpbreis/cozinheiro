@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Cozinheiro</string>
+    <string name="textViewContractorName">Nome</string>
+    <string name="buttonContractorClean">Limpar</string>
+    <string name="buttonContractorSave">Salvar</string>
+    <string name="textViewContractorPhone">Telefone</string>
+    <string name="contractorCleanMessage">Todos os campos foram limpos</string>
+    <string name="textViewContractorEmail">E-mail</string>
+    <string name="textViewContractorCellphone">Celular</string>
+    <string name="checkBoxContractorPriority">Contratante prioritário</string>
+    <string name="radioButtonContractorContactPreferencePhone">Telefone</string>
+    <string name="radioButtonContractorContactPreferenceCellphone">Celular</string>
+    <string name="radioButtonContractorContactPreferenceEmail">E-mail</string>
+    <string name="textViewContractorContactPreference">Preferencia de contato</string>
+    <string name="textViewContractorSex">Sexo</string>
+    <string name="contractorNameEmpty">O nome do contratante não pode ser vazio.</string>
+    <string name="contractorPhoneEmpty">O telefone do contratante não pode ser vazio.</string>
+    <string name="contractorCellphoneEmpty">O celular do contratante não pode ser vazio.</string>
+    <string name="contractorEmailEmpty">O e-mail do contratante não pode ser vazio.</string>
+    <string name="contractorContactPreferenceNotChecked">Não foi selecionado nenhuma preferência de contato para o contratante.</string>
+    <string name="contractorSaved">Todos os campos validados, o contratante foi salvo!</string>
+
+    <string-array name="sex">
+        <item>Feminino</item>
+        <item>Masculino</item>
+        <item>Outro</item>
+    </string-array>
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/textViewContractorName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextContractorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="text|textPersonName|textCapWords"
+            app:layout_constraintStart_toStartOf="@+id/textViewName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+        <Button
+            android:id="@+id/btnClean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="cleanFields"
+            android:text="@string/buttonContractorClean"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupContractorContactPreference" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="saveFields"
+            android:text="@string/buttonContractorSave"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/textViewContractorPhone"
+            app:layout_constraintStart_toStartOf="@+id/spinnerContractorSex"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerContractorSex" />
+
+        <EditText
+            android:id="@+id/editTextContractorPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="phone"
+            app:layout_constraintStart_toStartOf="@+id/textViewPhone"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPhone" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/textViewContractorEmail"
+            app:layout_constraintStart_toStartOf="@+id/editTextContractorCellphone"
+            app:layout_constraintTop_toBottomOf="@+id/editTextContractorCellphone" />
+
+        <TextView
+            android:id="@+id/textViewContractorCellphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/textViewContractorCellphone"
+            app:layout_constraintStart_toStartOf="@+id/editTextContractorPhone"
+            app:layout_constraintTop_toBottomOf="@+id/editTextContractorPhone" />
+
+        <EditText
+            android:id="@+id/editTextContractorCellphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="phone"
+            app:layout_constraintStart_toStartOf="@+id/textViewContractorCellphone"
+            app:layout_constraintTop_toBottomOf="@+id/textViewContractorCellphone" />
+
+        <EditText
+            android:id="@+id/editTextContractorEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toStartOf="@+id/textViewEmail"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+
+        <CheckBox
+            android:id="@+id/checkBoxContractorPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/checkBoxContractorPriority"
+            app:layout_constraintStart_toStartOf="@+id/editTextContractorEmail"
+            app:layout_constraintTop_toBottomOf="@+id/editTextContractorEmail" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupContractorContactPreference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/textViewContractorContactPreference"
+            app:layout_constraintTop_toBottomOf="@+id/textViewContractorContactPreference">
+
+            <RadioButton
+                android:id="@+id/radioButtonContractorContactPreferencePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radioButtonContractorContactPreferencePhone" />
+
+            <RadioButton
+                android:id="@+id/radioButtonContractorContactPreferenceCellphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radioButtonContractorContactPreferenceCellphone" />
+
+            <RadioButton
+                android:id="@+id/radioButtonContractorContactPreferenceEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radioButtonContractorContactPreferenceEmail" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewContractorContactPreference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/textViewContractorContactPreference"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxContractorPriority"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxContractorPriority" />
+
+        <Spinner
+            android:id="@+id/spinnerContractorSex"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:entries="@array/sex"
+            android:spinnerMode="dialog"
+            app:layout_constraintStart_toStartOf="@+id/textViewContractorSex"
+            app:layout_constraintTop_toBottomOf="@+id/textViewContractorSex" />
+
+        <TextView
+            android:id="@+id/textViewContractorSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/textViewContractorSex"
+            app:layout_constraintStart_toStartOf="@+id/editTextContractorName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextContractorName" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
