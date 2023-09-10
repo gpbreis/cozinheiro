@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/textViewContractorNameList"
@@ -49,4 +49,48 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toEndOf="@+id/textViewContractorSexList"
         app:layout_constraintTop_toBottomOf="@+id/textViewContractorNameListContent" />
+
+    <TextView
+        android:id="@+id/textViewContractorCellphoneList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/textViewContractorCellphoneList"
+        app:layout_constraintStart_toEndOf="@+id/textViewContractorSexListContent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContractorNameListContent" />
+
+    <TextView
+        android:id="@+id/textViewContractorCellphoneListContent"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewContractorCellphoneList"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContractorNameListContent" />
+
+    <TextView
+        android:id="@+id/textViewContractorEmailList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/textViewContractorEmailList"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewContractorSexList"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContractorSexList" />
+
+    <TextView
+        android:id="@+id/textViewContractorEmailListContent"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewContractorEmailList"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContractorSexListContent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

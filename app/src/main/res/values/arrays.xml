@@ -12,7 +12,7 @@
         <item>Carlos Eduardo</item>
         <item>João Pedro</item>
     </string-array>
-    <string-array name="sex">
+    <string-array name="sexo">
         <item>Masculino</item>
         <item>Feminino</item>
         <item>Masculino</item>

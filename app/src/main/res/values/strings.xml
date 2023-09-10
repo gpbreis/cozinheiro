@@ -21,6 +21,8 @@
     <string name="contractorSaved">Todos os campos validados, o contratante foi salvo!</string>
     <string name="textViewContractorNameList">Nome:</string>
     <string name="textViewContractorSexList">Sexo:</string>
+    <string name="textViewContractorCellphoneList">Celular:</string>
+    <string name="textViewContractorEmailList">E-Mail:</string>
 
     <string-array name="sex">
         <item>Feminino</item>
