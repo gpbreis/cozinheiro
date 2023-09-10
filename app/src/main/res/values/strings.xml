@@ -19,6 +19,8 @@
     <string name="contractorEmailEmpty">O e-mail do contratante não pode ser vazio.</string>
     <string name="contractorContactPreferenceNotChecked">Não foi selecionado nenhuma preferência de contato para o contratante.</string>
     <string name="contractorSaved">Todos os campos validados, o contratante foi salvo!</string>
+    <string name="textViewContractorNameList">Nome:</string>
+    <string name="textViewContractorSexList">Sexo:</string>
 
     <string-array name="sex">
         <item>Feminino</item>

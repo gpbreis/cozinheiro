@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="names">
+        <item>João da Silva</item>
+        <item>Maria de Souza</item>
+        <item>José Carlos</item>
+        <item>Ana Paula</item>
+        <item>Pedro Santos</item>
+        <item>Clara Barbosa</item>
+        <item>Luiz Ferreira</item>
+        <item>Letícia Gomes</item>
+        <item>Carlos Eduardo</item>
+        <item>João Pedro</item>
+    </string-array>
+    <string-array name="sex">
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Masculino</item>
+        <item>Masculino</item>
+    </string-array>
+    <string-array name="phones">
+        <item>(11) 3123-4567</item>
+        <item>(21) 4567-8901</item>
+        <item>(31) 9012-3456</item>
+        <item>(41) 6543-2109</item>
+        <item>(51) 7890-1234</item>
+        <item>(62) 0123-4567</item>
+        <item>(73) 5432-1098</item>
+        <item>(84) 6543-2109</item>
+        <item>(95) 7890-1234</item>
+        <item>(13) 3143-2567</item>
+    </string-array>
+    <string-array name="cellphones">
+        <item>(11) 9999-9999</item>
+        <item>(21) 9876-5432</item>
+        <item>(31) 9789-0123</item>
+        <item>(41) 9876-5432</item>
+        <item>(51) 9999-9999</item>
+        <item>(62) 9876-5432</item>
+        <item>(73) 9789-0123</item>
+        <item>(84) 9876-5432</item>
+        <item>(95) 9999-9999</item>
+        <item>(13) 9999-9999</item>
+    </string-array>
+    <string-array name="emails">
+        <item>joao.silva@email.com</item>
+        <item>maria.souza@email.com</item>
+        <item>jose.carlos@email.com</item>
+        <item>ana.paula@email.com</item>
+        <item>pedro.santos@email.com</item>
+        <item>clara.barbosa@email.com</item>
+        <item>luiz.ferreira@email.com</item>
+        <item>leticia.gomes@email.com</item>
+        <item>carlos.eduardo@email.com</item>
+        <item>joao.pedro@email.com</item>
+    </string-array>
+    <integer-array name="priority">
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>0</item>
+    </integer-array>
+    <integer-array name="contactPreferences">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </integer-array>
+</resources>
