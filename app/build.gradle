@@ -5,6 +5,7 @@ plugins {
 android {
     namespace 'dev.gpbreis.cozinheiro'
     compileSdk 33
+    buildToolsVersion "33.0.1"
 
     defaultConfig {
         applicationId "dev.gpbreis.cozinheiro"
