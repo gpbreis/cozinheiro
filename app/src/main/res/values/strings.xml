@@ -23,6 +23,17 @@
     <string name="textViewContractorSexList">Sexo:</string>
     <string name="textViewContractorCellphoneList">Celular:</string>
     <string name="textViewContractorEmailList">E-Mail:</string>
+    <string name="textViewAppDescription">App para cozinheiros autônomos gerenciarem seus eventos.</string>
+    <string name="textViewAppName">Cozinheiro</string>
+    <string name="textViewAppAuthorName">Autor:</string>
+    <string name="textViewAppAuthorEmailContent">gpbreis@gmail.com</string>
+    <string name="textViewAppAuthorNameContent">Gustavo Pereira Breis</string>
+    <string name="textViewAppAuthorEmail">E-Mail:</string>
+    <string name="textViewAppCourse">Curso:</string>
+    <string name="textViewAppCourseContent">XXVI Curso de Especialização em Tecnologia Java</string>
+    <string name="imageViewAppLogoContentDescription">Imagem com o logo da UTFPR</string>
+    <string name="buttonNewContractor">Novo</string>
+    <string name="buttonAbout">Sobre</string>
 
     <string-array name="sex">
         <item>Feminino</item>

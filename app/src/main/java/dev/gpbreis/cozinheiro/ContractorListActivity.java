@@ -55,4 +55,8 @@ public class ContractorListActivity extends AppCompatActivity {
 
         contractorListView.setAdapter(contractorAdapter);
     }
+
+    public void openAbout(View view) {
+        AboutActivity.about(this);
+    }
 }
