@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ContractorActivity"
             android:exported="false"></activity>
     </application>
 

@@ -1,5 +1,7 @@
 package dev.gpbreis.cozinheiro;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,6 +15,8 @@ import java.util.ArrayList;
 public class ContractorListActivity extends AppCompatActivity {
 
     private ListView contractorListView;
+    private ArrayList<Contractor> contractors;
+    private ContractorAdapter contractorAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,26 +41,40 @@ public class ContractorListActivity extends AppCompatActivity {
 
     private void populateContractorListView() {
 
-        String[] names = getResources().getStringArray(R.array.names);
-        String[] sex = getResources().getStringArray(R.array.sexo);
-        String[] phones = getResources().getStringArray(R.array.phones);
-        String[] cellphones = getResources().getStringArray(R.array.cellphones);
-        String[] emails = getResources().getStringArray(R.array.emails);
-        int[] priority = getResources().getIntArray(R.array.priority);
-        int[] contactPreference = getResources().getIntArray(R.array.contactPreferences);
+        contractors = new ArrayList<>();
 
-        ArrayList<Contractor> contractors = new ArrayList<>();
-
-        for (int i = 0; i < names.length; i++) {
-            contractors.add(new Contractor(names[i], sex[i], phones[i], cellphones[i], emails[i], contactPreference[i]));
-        }
-
-        ContractorAdapter contractorAdapter = new ContractorAdapter(this, contractors);
+        contractorAdapter = new ContractorAdapter(this, contractors);
 
         contractorListView.setAdapter(contractorAdapter);
     }
 
     public void openAbout(View view) {
         AboutActivity.about(this);
+    }
+
+    public void addContractor(View view) {
+        ContractorActivity.newContractor(this);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == Activity.RESULT_OK) {
+            Bundle bundle = data.getExtras();
+
+            String name = bundle.getString(ContractorActivity.NAME);
+            String sex = bundle.getString(ContractorActivity.SEX);
+            String phone = bundle.getString(ContractorActivity.PHONE);
+            String cellphone = bundle.getString(ContractorActivity.CELLPHONE);
+            String email = bundle.getString(ContractorActivity.EMAIL);
+            boolean priority = bundle.getBoolean(ContractorActivity.PRIORITY);
+            int contactPreference = bundle.getInt(ContractorActivity.CONTACTPREFERECE);
+
+            Contractor contractor = new Contractor(name, sex, phone, cellphone, email, contactPreference);
+
+            contractors.add(contractor);
+
+            contractorAdapter.notifyDataSetChanged();
+        }
     }
 }

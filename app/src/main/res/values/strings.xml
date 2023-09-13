@@ -32,7 +32,7 @@
     <string name="textViewAppCourse">Curso:</string>
     <string name="textViewAppCourseContent">XXVI Curso de Especialização em Tecnologia Java</string>
     <string name="imageViewAppLogoContentDescription">Imagem com o logo da UTFPR</string>
-    <string name="buttonNewContractor">Novo</string>
+    <string name="buttonNewContractor">Adicionar</string>
     <string name="buttonAbout">Sobre</string>
 
     <string-array name="sex">
