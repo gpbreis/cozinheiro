@@ -1,21 +1,39 @@
-package dev.gpbreis.cozinheiro;
+package dev.gpbreis.cozinheiro.model;
 
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class Contractor {
 
+    public static final int PHONE = 1;
+    public static final int CELLPHONE = 2;
+    public static final int EMAIL = 3;
+
+    @PrimaryKey(autoGenerate = true)
+    private int id;
+    @NonNull
     private String name;
+    @NonNull
     private String sex;
+    @NonNull
     private String phone;
+    @NonNull
     private String cellphone;
+    @NonNull
     private String email;
     private Boolean priority;
+    @NonNull
     private int contractPreference;
 
-    public Contractor(String name, String sex, String phone, String cellphone, String email, int contractPreference) {
+    public Contractor(String name, String sex, String phone, String cellphone, String email, Boolean priority, int contractPreference) {
         this.name = name;
         this.sex = sex;
         this.phone = phone;
         this.cellphone = cellphone;
         this.email = email;
+        this.priority = priority;
         this.contractPreference = contractPreference;
     }
 
@@ -73,5 +91,13 @@ public class Contractor {
 
     public void setContractPreference(int contractPreference) {
         this.contractPreference = contractPreference;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import dev.gpbreis.cozinheiro.model.Contractor;
+
 public class ContractorAdapter extends BaseAdapter {
 
     Context context;
@@ -60,6 +62,10 @@ public class ContractorAdapter extends BaseAdapter {
         } else {
             contractorHolder = (ContractorHolder) view.getTag();
         }
+
+//        ContractorDatabase contractorDatabase = ContractorDatabase.getDatabase(context);
+//
+//        contractors = new ArrayList<>(contractorDatabase.contractorDao().queryAll());
 
         contractorHolder.textViewName.setText(contractors.get(position).getName());
         contractorHolder.textViewSex.setText(contractors.get(position).getSex());

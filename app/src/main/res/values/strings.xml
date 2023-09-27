@@ -1,43 +1,60 @@
 <resources>
     <string name="app_name">Cozinheiro</string>
-    <string name="textViewContractorName">Nome</string>
-    <string name="buttonContractorClean">Limpar</string>
-    <string name="buttonContractorSave">Salvar</string>
-    <string name="textViewContractorPhone">Telefone</string>
-    <string name="contractorCleanMessage">Todos os campos foram limpos</string>
+    <string name="textViewContractorName">Name</string>
+    <string name="buttonContractorClean">Clean</string>
+    <string name="buttonContractorSave">Save</string>
+    <string name="textViewContractorPhone">Phone</string>
+    <string name="contractorCleanMessage">All fields cleaned</string>
     <string name="textViewContractorEmail">E-mail</string>
-    <string name="textViewContractorCellphone">Celular</string>
-    <string name="checkBoxContractorPriority">Contratante prioritário</string>
-    <string name="radioButtonContractorContactPreferencePhone">Telefone</string>
-    <string name="radioButtonContractorContactPreferenceCellphone">Celular</string>
+    <string name="textViewContractorCellphone">Cellphone</string>
+    <string name="checkBoxContractorPriority">Priority Contractor</string>
+    <string name="radioButtonContractorContactPreferencePhone">Phone</string>
+    <string name="radioButtonContractorContactPreferenceCellphone">Cellphone</string>
     <string name="radioButtonContractorContactPreferenceEmail">E-mail</string>
-    <string name="textViewContractorContactPreference">Preferencia de contato</string>
-    <string name="textViewContractorSex">Sexo</string>
-    <string name="contractorNameEmpty">O nome do contratante não pode ser vazio.</string>
-    <string name="contractorPhoneEmpty">O telefone do contratante não pode ser vazio.</string>
-    <string name="contractorCellphoneEmpty">O celular do contratante não pode ser vazio.</string>
-    <string name="contractorEmailEmpty">O e-mail do contratante não pode ser vazio.</string>
-    <string name="contractorContactPreferenceNotChecked">Não foi selecionado nenhuma preferência de contato para o contratante.</string>
-    <string name="contractorSaved">Todos os campos validados, o contratante foi salvo!</string>
-    <string name="textViewContractorNameList">Nome:</string>
-    <string name="textViewContractorSexList">Sexo:</string>
-    <string name="textViewContractorCellphoneList">Celular:</string>
+    <string name="textViewContractorContactPreference">Contact Preference</string>
+    <string name="textViewContractorSex">Sex</string>
+    <string name="contractorNameEmpty">Contractor name can\'t be empty</string>
+    <string name="contractorPhoneEmpty">Contractor phone can\'t be empty</string>
+    <string name="contractorCellphoneEmpty">Contractor cellphone can\'t be empty</string>
+    <string name="contractorEmailEmpty">Contractor e-mail can\'t be empty</string>
+    <string name="contractorContactPreferenceNotChecked">No contact preference has been selected</string>
+    <string name="contractorSaved">All fields validated</string>
+    <string name="textViewContractorNameList">Name:</string>
+    <string name="textViewContractorSexList">Sex:</string>
+    <string name="textViewContractorCellphoneList">Cellphone:</string>
     <string name="textViewContractorEmailList">E-Mail:</string>
-    <string name="textViewAppDescription">App para cozinheiros autônomos gerenciarem seus eventos.</string>
+    <string name="textViewAppDescription">App for freelance chefs to manage their events.</string>
     <string name="textViewAppName">Cozinheiro</string>
-    <string name="textViewAppAuthorName">Autor:</string>
+    <string name="textViewAppAuthorName">Author:</string>
     <string name="textViewAppAuthorEmailContent">gpbreis@gmail.com</string>
     <string name="textViewAppAuthorNameContent">Gustavo Pereira Breis</string>
     <string name="textViewAppAuthorEmail">E-Mail:</string>
-    <string name="textViewAppCourse">Curso:</string>
+    <string name="textViewAppCourse">Course:</string>
     <string name="textViewAppCourseContent">XXVI Curso de Especialização em Tecnologia Java</string>
     <string name="imageViewAppLogoContentDescription">Imagem com o logo da UTFPR</string>
-    <string name="buttonNewContractor">Adicionar</string>
-    <string name="buttonAbout">Sobre</string>
+    <string name="buttonNewContractor">Add</string>
+    <string name="buttonAbout">About</string>
+    <string name="menuItemAdd">Add</string>
+    <string name="menuItemAbour">About</string>
+    <string name="menuItemContractorListEdit">Edit</string>
+    <string name="menuItemContractorListDelete">Delete</string>
+    <string name="menuItemContractorSave">Save</string>
+    <string name="menuItemContractorClean">Clean</string>
+    <string name="textViewEventTitle">Event</string>
+    <string name="editTextEventTitle" />
+    <string name="textViewEventContractorName">Name</string>
+    <string name="warningTitle">Warning</string>
+    <string name="warningNeutralButtonText">Ok</string>
+    <string name="confirmationTitle">Confirm</string>
+    <string name="confirmationYes">Yes</string>
+    <string name="confirmationNo">No</string>
+    <string name="new_contractor">New Contractor</string>
+    <string name="change_contractor">Update Contractor</string>
+    <string name="menuItemNightMode">Night Mode</string>
 
     <string-array name="sex">
-        <item>Feminino</item>
-        <item>Masculino</item>
-        <item>Outro</item>
+        <item>Female</item>
+        <item>Male</item>
+        <item>Other</item>
     </string-array>
 </resources>
